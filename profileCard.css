@@ -89,4 +89,8 @@ body {
     .social-links a img {
         height: 30px;
     }
+
+    .current-time-utc {
+        font-size: 10px;
+    }
 }
