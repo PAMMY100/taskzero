@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./profileCard.css">
 </head>
-<body>
-    <h1>Hello world!</h1>
+<body background="./assets/BG Img.png" style="object-fit: contain; width: 100%;">
+    <div class="profile-card">
+        <img src="./assets/displayPic.JPG" alt="Profile Picture" class="profile-picture" data-testid="profilePicture">
+        <h1 class="full-name" data-testid="fullName">Samuel Adebayo</h1>
+        <h2 class="job-title" data-testid="jobTitle">Frontend Developer</h2>
+        <p class="short-bio" data-testid="shortBio">
+            I’m a seasoned Frontend Developer with over 1 year of experience in creating high-quality web applications. My expertise lies in using HTML5, CSS3, JavaScript (ES6+), and frameworks like React.js and Next.js to build scalable and performant user interfaces.</p>
+        <p class="current-location" data-testid="currentLocation">Lagos, Nigeria</p>
+        <a href="mailto:your.email@example.com" class="email-address" data-testid="emailAddress">princesamuel636@gmail.com</a>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/samuel-adebayo-57aaa618a/?originalSubdomain=ng" target="_blank"><img src="./assets/linkedin.svg" alt="linkedin icon"></a>
+            <a href="https://github.com/PAMMY100" target="_blank"><img src="./assets/github.svg" alt="github Icon"></a>
+            <a href="https://x.com/breezy_op1" target="_blank"><img src="./assets/twitter.svg" alt="Twitter icon"></a>
+        </div>
+        <p class="current-time-utc" data-testid="currentTimeUTC"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

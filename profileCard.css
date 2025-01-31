@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #D9D9D9;
+    padding: 20px;
+    max-width: 627px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    opacity: 80%;
+}
+
+.profile-picture {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0px;
+    opacity: 100%;
+}
+
+.full-name {
+    font-size: 48px;
+    font-weight: 700px;
+    margin: 5px 0;
+    opacity: 100%;
+}
+
+.job-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.short-bio {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.current-location, .email-address, .current-time-utc {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.email-address {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 15px;
+        width: 300px;
+    }
+
+    .full-name {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .job-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .social-links a img {
+        height: 30px;
+    }
+}
